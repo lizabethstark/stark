@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="index.js"></script>
+    <script type="module" src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sacramento&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="nav">
+            <a class="logo" href="#" aria-label="Home">Lizabeth Stark</a>
+            <div class="nav-links">
+                <a href="#Home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#work">Work</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <!-- <p class="hero-kicker">Headline</p> -->
+                <h1 id="hero-title" class="hero-title">
+                    Frontend Developer | Virtual Assistant | Aspiring Mechatronics Engineer
+                </h1>
+
+                <div class="hero-card">
+                    <h2 class="hero-card-title">Short Introduction</h2>
+                    <p class="hero-text">
+                        Hi, I’m Elizabeth Ajuba Ngezah, a passionate frontend developer and virtual assistant who enjoys building user-friendly digital experiences and helping businesses stay organized and productive. I’m also pursuing my long-term passion in mechatronics engineering,
+                        where technology and innovation meet.
+                    </p>
+                </div>
+                <div class="image"></div>
+                <div class="hero-cta" aria-label="Call to Action">
+                    <a class="btn btn-ghost" href="./Elizabeth CV[1].pdf" download>Download Resume</a>
+                    <a class="btn btn-outline" href="#contact">Contact Me</a>
+                </div>
+            </div>
+        </section>
+        <section class="skills-display">
+            <div class="grid">
+                <div class="card1"></div>
+                <div class="card2"></div>
+                <div class="card3"></div>
+                <div class="card4"></div>
+                <div class="card5"></div>
+                <div class="card6"></div>
+            </div>
+            <hr>
+        </section>
+
+        <section class="about">
+            <section id="about" class="section-about" aria-labelledby="about-title">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h2 id="about-title">About Me</h2>
+                        <p>
+                            Hello! I’m Elizabeth Ajuba Ngezah, a frontend developer with a passion for building clean, responsive, and engaging web experiences.
+                        </p>
+                        <p>
+                            With experience in web development and virtual assistance, I help individuals and businesses bring their ideas to life while keeping their digital operations efficient and organized.
+                        </p>
+                        <p>
+                            My journey into technology is driven by curiosity and a love for problem-solving. Beyond web development, I am also an aspiring mechatronics engineer, fascinated by how software and hardware work together to create intelligent systems.
+                        </p>
+                        <p>
+                            I believe in continuous learning, resilience, and proactive problem-solving, which allows me to adapt quickly and deliver high-quality work.
+                        </p>
+                    </div>
+
+                    <div class="about-media" aria-label="Profile image placeholder">
+                        <div class="image-placeholder"></div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section id="skills" class="section-skills" aria-labelledby="skills-title">
+            <div class="skills-head">
+                <h2 id="skills-title">Skills</h2>
+                <p class="skills-subtitle">Tap a skill to see more. Use the tabs or search to explore.</p>
+            </div>
+
+            <div class="skills-controls" role="group" aria-label="Skill categories">
+                <button class="chip chip-active" type="button" data-skill-filter="all">All</button>
+                <button class="chip" type="button" data-skill-filter="technical">Technical Skills</button>
+                <button class="chip" type="button" data-skill-filter="virtual">Virtual Assistant Skills</button>
+                <button class="chip" type="button" data-skill-filter="tools">Tools</button>
+                <button class="chip" type="button" data-skill-filter="soft">Soft Skills</button>
+            </div>
+
+            <div class="skills-search">
+                <label class="sr-only" for="skillsSearch">Search skills</label>
+                <input id="skillsSearch" type="search" placeholder="Search a skill (e.g., JavaScript, Figma…)" />
+            </div>
+
+            <div class="skills-grid">
+                <div class="skills-list" aria-label="Skills list">
+                    <button class="skill-pill" type="button" data-skill="HTML" data-category="technical">HTML</button>
+                    <button class="skill-pill" type="button" data-skill="CSS" data-category="technical">CSS</button>
+                    <button class="skill-pill" type="button" data-skill="JavaScript" data-category="technical">JavaScript</button>
+                    <button class="skill-pill" type="button" data-skill="Responsive Web Design" data-category="technical">
+              Responsive Web Design
+            </button>
+                    <button class="skill-pill" type="button" data-skill="Git & GitHub" data-category="technical">
+              Git & GitHub
+            </button>
+                    <button class="skill-pill" type="button" data-skill="UI Implementation" data-category="technical">
+              UI Implementation
+            </button>
+
+                    <button class="skill-pill" type="button" data-skill="Email & Calendar Management" data-category="virtual">
+              Email & Calendar Management
+            </button>
+                    <button class="skill-pill" type="button" data-skill="Data Entry" data-category="virtual">Data Entry</button>
+                    <button class="skill-pill" type="button" data-skill="Online Research" data-category="virtual">
+              Online Research
+            </button>
+                    <button class="skill-pill" type="button" data-skill="Task Management" data-category="virtual">
+              Task Management
+            </button>
+                    <button class="skill-pill" type="button" data-skill="Customer Support" data-category="virtual">
+              Customer Support
+            </button>
+
+                    <button class="skill-pill" type="button" data-skill="Figma" data-category="tools">Figma</button>
+                    <button class="skill-pill" type="button" data-skill="Notion" data-category="tools">Notion</button>
+                    <button class="skill-pill" type="button" data-skill="Google Workspace" data-category="tools">
+              Google Workspace
+            </button>
+                    <button class="skill-pill" type="button" data-skill="Microsoft Office" data-category="tools">
+              Microsoft Office
+            </button>
+                    <button class="skill-pill" type="button" data-skill="Trello / Asana" data-category="tools">
+              Trello / Asana
+            </button>
+
+                    <button class="skill-pill" type="button" data-skill="Proactive" data-category="soft">Proactive</button>
+                    <button class="skill-pill" type="button" data-skill="Goal-Oriented" data-category="soft">Goal-Oriented</button>
+                    <button class="skill-pill" type="button" data-skill="Organized" data-category="soft">Organized</button>
+                    <button class="skill-pill" type="button" data-skill="Strong Communication" data-category="soft">
+              Strong Communication
+            </button>
+                    <button class="skill-pill" type="button" data-skill="Problem Solving" data-category="soft">
+              Problem Solving
+            </button>
+                </div>
+
+                <aside class="skills-panel" aria-live="polite">
+                    <div class="skills-panel-inner">
+                        <p class="skills-panel-kicker">Selected skill</p>
+                        <h3 class="skills-panel-title" id="skillsSelectedTitle">Click a skill</h3>
+                        <p class="skills-panel-desc" id="skillsSelectedDesc">
+                            Choose any skill chip to see a short description here.
+                        </p>
+
+                        <div class="skills-meter" aria-label="Interest meter">
+                            <div class="skills-meter-labels">
+                                <span>Engagement</span>
+                                <span id="skillsMeterValue">—</span>
+                            </div>
+                            <div class="skills-meter-track">
+                                <div class="skills-meter-fill" id="skillsMeterFill" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section id="work" class="section-work" aria-labelledby="work-title">
+            <div class="work-head">
+                <h2 id="work-title">Work</h2>
+                <p class="work-subtitle">Explore my work by category. Click a card for details.</p>
+            </div>
+
+            <div class="work-controls" role="group" aria-label="Work categories">
+                <button class="chip chip-active" type="button" data-work-filter="all">All</button>
+                <button class="chip" type="button" data-work-filter="web">Web Design</button>
+                <button class="chip" type="button" data-work-filter="va">Virtual Assistant</button>
+                <button class="chip" type="button" data-work-filter="robotics">Robotics</button>
+            </div>
+
+            <div class="work-grid" aria-label="Project cards">
+                <article class="work-card" tabindex="0" data-work-category="web" data-title="Landing Page UI" data-desc="A modern landing page layout focused on clarity, conversion, and responsive design.">
+                    <div class="work-thumb work-thumb-web" aria-hidden="true"></div>
+                    <div class="work-card-body">
+                        <p class="work-tag">Web Design</p>
+                        <h3 class="work-card-title">Landing Page UI</h3>
+                        <p class="work-card-text"></p>
+                    </div>
+                </article>
+
+                <article class="work-card" tabindex="0" data-work-category="web" data-title="Portfolio Section System" data-desc="A reusable section system (hero/about/skills) with consistent spacing, components, and micro-interactions.">
+                    <div class="work-thumb work-thumb-web-2" aria-hidden="true"></div>
+                    <div class="work-card-body">
+                        <p class="work-tag">Web Design</p>
+                        <h3 class="work-card-title">Portfolio Section System</h3>
+                        <p class="work-card-text"></p>
+                    </div>
+                </article>
+
+                <article class="work-card" tabindex="0" data-work-category="va" data-title="Inbox & Calendar Workflow" data-desc="A practical workflow for email triage, scheduling, reminders, and follow-ups to keep teams aligned.">
+                    <div class="work-thumb work-thumb-va" aria-hidden="true"></div>
+                    <div class="work-card-body">
+                        <p class="work-tag">Virtual Assistant</p>
+                        <h3 class="work-card-title">Inbox & Calendar Workflow</h3>
+                        <p class="work-card-text"></p>
+                    </div>
+                </article>
+
+                <article class="work-card" tabindex="0" data-work-category="va" data-title="Research & Reporting Pack" data-desc="A structured online research approach with clean summaries, source tracking, and action-ready notes.">
+                    <div class="work-thumb work-thumb-va-2" aria-hidden="true"></div>
+                    <div class="work-card-body">
+                        <p class="work-tag">Virtual Assistant</p>
+                        <h3 class="work-card-title">Research & Reporting Pack</h3>
+                        <p class="work-card-text"></p>
+                    </div>
+                </article>
+
+                <article class="work-card" tabindex="0" data-work-category="robotics" data-title="Robotics Concept Notes" data-desc="Early-stage notes and explorations around sensors, motion, and control—where software meets hardware.">
+                    <div class="work-thumb work-thumb-robotics" aria-hidden="true"></div>
+                    <div class="work-card-body">
+                        <p class="work-tag">Robotics</p>
+                        <h3 class="work-card-title">Robotics Concept Notes</h3>
+                        <p class="work-card-text"></p>
+                    </div>
+                </article>
+
+                <article class="work-card" tabindex="0" data-work-category="robotics" data-title="Mechatronics Learning Track" data-desc="A learning roadmap and mini-build milestones that document progress and experiments over time.">
+                    <div class="work-thumb work-thumb-robotics-2" aria-hidden="true"></div>
+                    <div class="work-card-body">
+                        <p class="work-tag">Robotics</p>
+                        <h3 class="work-card-title">Mechatronics Learning Track</h3>
+                        <p class="work-card-text"></p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="modal-backdrop is-hidden" id="workModal" role="dialog" aria-modal="true" aria-labelledby="workModalTitle">
+                <div class="modal">
+                    <div class="modal-head">
+                        <div>
+                            <p class="modal-kicker" id="workModalKicker">Project</p>
+                            <h3 class="modal-title" id="workModalTitle">Title</h3>
+                        </div>
+                        <button class="modal-close" type="button" aria-label="Close">✕</button>
+                    </div>
+                    <p class="modal-desc" id="workModalDesc">Description</p>
+                </div>
+            </div>
+        </section>
+        <section class="cta-strip" aria-label="Call to action">
+        <div class="cta-strip-bg" aria-hidden="true"></div>
+        <div class="cta-strip-overlay" aria-hidden="true"></div>
+        <div class="cta-strip-inner">
+          <p class="cta-strip-text">
+            Ready to build something great together? <br />Let’s connect—whether it’s a web project, VA support, or
+            mechatronics ideas.
+          </p>
+          <a class="btn btn-primary cta-strip-btn" href="#contact">Get in touch</a>
+        </div>
+      </section>
+
+      <section id="contact" class="section-contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact</h2>
+        <p class="contact-lead">Reach out by phone, email, or socials—or visit my address below.</p>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3 class="contact-label">Phone</h3>
+            <a class="contact-value" href="tel:+233555087384">+233 (0)555 087 384 <br /> +233 (0)553 261 674</a>
+            <!-- <p class="contact-hint">Replace with your real number</p> -->
+          </div>
+
+          <div class="contact-card">
+            <h3 class="contact-label">Email</h3>
+            <a class="contact-value" href="mailto:lizabethstark56@gmail.com">lizabethstark56@gmail.com <br /> elizabethajubangezah@gmail.com</a>
+            <!-- <p class="contact-hint">Replace with your real email</p> -->
+          </div>
+
+          <div class="contact-card contact-card-wide">
+            <h3 class="contact-label">Address</h3>
+            <address class="contact-address">
+              Tema Community1<br />
+              Accra,Ghana
+            </address>
+            <!-- <p class="contact-hint">Update with your full address</p> -->
+          </div>
+
+          <div class="contact-card contact-card-wide">
+            <h3 class="contact-label">Social</h3>
+            <ul class="contact-socials" role="list">
+              <li>
+                <a href="https://linkedin.com/in/elizabeth-ngezah" target="_blank" rel="noopener noreferrer"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/@lizabethstark56" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </li>
+              
+              <li>
+                <a href="https://www.instagram.com/lizabeth_stark56" target="_blank" rel="noopener noreferrer">Instagram</a>
+              </li>
+            </ul>
+            <!-- <p class="contact-hint">Replace links with your real handles</p> -->
+          </div>
+        </div>
+      </section>
+
+</body>
+
+</html>
